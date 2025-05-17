@@ -1,3 +1,19 @@
+:root {
+  --yellow-45: hsl(51, 100%, 90%, 0.7);
+  --yellow-50: hsl(51, 100%, 90%);
+  --yellow-100: hsl(51, 100%, 85%);
+  --yellow-200: hsl(51, 100%, 70%);
+  --yellow-300: hsl(51, 100%, 60%);
+  --yellow-400: hsl(51, 100%, 50%);
+  --yellow-500: hsl(51, 100%, 45%);
+  --yellow-600: hsl(51, 100%, 35%);
+  --yellow-700: hsl(51, 100%, 25%);
+  --yellow-800: hsl(51, 100%, 15%);
+  --yellow-900: hsl(51, 100%, 10%);
+  --yellow-950: hsl(51, 100%, 5%);
+  --yellow-1000: hsl(51, 100%, 2%);
+}
+
 /* Reset */
 /* Seletor Universal */
 * {
@@ -15,6 +31,8 @@ body {
   background-color: #000;
 }
 
+/* Header */
+
 .button-login {
   max-width: 100%;
   text-align: right;
@@ -22,7 +40,7 @@ body {
 }
 
 .login {
-  color: white;
+  color: var(--yellow-100);
   font-size: 18px;
   text-decoration: none;
   padding-left: 10px;
@@ -43,14 +61,10 @@ body {
 
 h1 {
   text-align: center;
-  color: #ffd700;
+  color: var(--yellow-400);
   font-family: "Rye", Arial, Helvetica, sans-serif;
   margin-top: 0;
-  font-size: clamp(
-    50px,
-    5vw,
-    120px
-  ); /* Escala entre 24px e 45px dependendo da tela */
+  font-size: clamp(50px, 5vw, 120px);
   word-spacing: 0.1em;
 }
 
@@ -95,42 +109,84 @@ h1 {
 
 .button-gallery,
 .button-news {
-  background-color: #ffd700;
+  background-color: var(--yellow-400);
   text-decoration: none;
-  padding: 2px 15px;
+  padding: 1px 9px;
   color: black;
   font-weight: bold;
-  border-radius: 25px;
+  border-radius: 15px;
   transition: background-color 0.3s;
   opacity: 1;
+  text-align: center;
 }
 
 .button-gallery:hover,
 .button-news:hover {
-  background-color: #e0c200;
+  background-color: var(--yellow-100);
+  box-shadow: 0px 0px 12px var(--yellow-45); /* deslocamento horizontal, deslocamento vertical, desfoque, cor */
+}
+
+/* Content */
+
+.content {
+  margin: 20px;
+}
+
+.title-icon::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background-image: url("./assets/imagens/Moto.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
 }
 
 h2 {
-  color: #ffd700;
+  color: var(--yellow-400);
   font-family: "Rye", Arial, Helvetica, sans-serif;
   text-align: left;
 }
 
 p,
 ul {
-  color: #ffff;
+  color: var(--yellow-50);
   text-align: left;
 }
 
+ul {
+  padding-left: 20px;
+}
+
 .button-base {
-  text-align: center;
-  background-color: #ffd700;
-  border-radius: 10px;
-  padding: 1px;
-  width: 150px;
-  max-width: 200px;
+  max-width: 60px;
   margin-left: auto;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 10px;
+  padding: 1px 9px;
+  color: black;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  opacity: 1;
+  text-align: center;
+}
+
+.button-base2 {
+  display: flex;
+  background-color: var(--yellow-400);
+  border: none;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  padding: 3px;
+  border-radius: 15px;
+}
+
+.icone-topo {
+  width: 25px;
+  height: 25px;
 }
 
 .back {
