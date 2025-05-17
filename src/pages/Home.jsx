@@ -1,32 +1,12 @@
-import { Link } from "react-router-dom";
-import lobo from "../assets/imagens/LOBO.png";
+import Header from "../components/Header.jsx";
 import "../style.css";
 import TopButton from "../components/TopButton.jsx";
+import Footer from "../components/Footer.jsx";
 
 const Home = () => {
   return (
     <div>
-      <header className="container">
-        <div className="button-login">
-          <Link to="/login" className="login">
-            Login
-          </Link>
-        </div>
-        <div className="lobo">
-          <img src={lobo} alt="Lobo com cicatris" />
-        </div>
-        <div>
-          <h1>7 LOBOS M.C</h1>
-        </div>
-        <div className="top-bar">
-          <Link to="/galeria" className="button-gallery">
-            Galeria
-          </Link>
-          <Link to="/noticias" className="button-news">
-            Notícias
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       <div className="content">
         <h2 className="title-icon">Fundamentos e Estrutura</h2>
@@ -97,6 +77,7 @@ const Home = () => {
           <TopButton />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

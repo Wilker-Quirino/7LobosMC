@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import wolfIcon from "../assets/logo/Logo.png";
+import wolfIcon from "../assets/logo/Logo2.png";
 import "../style.css";
 
 function TopButton() {
