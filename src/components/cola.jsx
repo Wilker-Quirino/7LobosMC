@@ -86,3 +86,38 @@
     </Link>
   </div>
 </header>;
+
+/* Esconder menu em telas pequenas */
+/* @media (max-width: 768px) {
+  .menu-hamburguer {
+    display: block;
+  }
+
+  .button-container {
+    display: none;
+    flex-direction: column;
+    background-color: var(--yellow-400);
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .button-container a {
+    margin: 10px 0;
+    color: white;
+  }
+
+  .button-container.ativo {
+    display: flex;
+  }
+}
+
+.buttons-menu {
+  color: var(--yellow-200);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 4px var(--yellow-800);
+} */
