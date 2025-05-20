@@ -22,309 +22,115 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  padding: 0;
-  line-height: 28px;
-  letter-spacing: 0.1em;
-  background-color: #000;
-}
-
-/* Header */
-
-.header-background__image {
-  background-image: url("/src/assets/imagens/floresta.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 50% -240px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px black;
-}
-
-.container {
-  margin: 0;
-  text-align: center;
-}
-
-.button-login {
-  max-width: 95%;
-  text-align: right;
+.header-font {
   font-family: "Rye", Arial, Helvetica, sans-serif;
 }
 
-.login {
-  color: var(--yellow-100);
-  font-size: 18px;
-  text-decoration: none;
-  padding-left: 10px;
-  font-weight: bold;
+.header-background__image {
+  background: none;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  color: white;
+  text-shadow: 0 0 5px var(--yellow-1000);
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 0 10px;
-    max-width: 360px;
-  }
+.header-background__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/imagens/Floresta-estrada.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
 
-  .button-login {
-    text-align: right;
-    padding: 10px 0;
-  }
+/* .header-background__image {
+  background-image: url("./assets/imagens/Floresta-estrada.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+} */
 
-  .login {
-    font-size: 16px;
-    display: inline-block;
-  }
+.button-login {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--yellow-200);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-right: 10px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px var(--yellow-800);
 }
 
 .lobo {
-  width: 100%;
-  max-width: 250px;
-  flex-direction: column;
-  display: inline-flex;
-  padding-bottom: 35px;
-}
-
-h1 {
   text-align: center;
-  color: var(--yellow-400);
-  font-family: "Rye", Arial, Helvetica, sans-serif;
-  margin-top: 0;
-  font-size: clamp(50px, 5vw, 120px);
-  word-spacing: 0.1em;
+  padding-top: 2%;
+  transform: translateY(-150px);
 }
 
-p,
-h2 {
-  line-height: 1.5rem;
+.lobo img {
+  width: clamp(160px, 30vw, 300px);
+  height: auto;
+}
+
+.club-name {
+  color: var(--yellow-500);
+  font-size: clamp(60px, 3vw, 120px);
+  margin-top: 0;
+  text-shadow: 2px 2px 4px var(--yellow-800);
+  letter-spacing: 2px;
 }
 
 @media (max-width: 1280px) {
-  .lobo {
-    max-width: clamp(45px, 40%, 200px);
-  }
-
   h1 {
-    font-size: clamp(35px, 8vw, 120px);
-    margin: 20px;
-  }
-
-  .login {
-    font-size: 1.5rem;
+    font-size: clamp(65px, 2vw, 80px);
   }
 }
 
 @media (max-width: 800px) {
-  .lobo {
-    max-width: clamp(45px, 50%, 200px);
-    padding-bottom: 0;
-  }
-
   h1 {
-    font-size: clamp(35px, 8vw, 120px);
-    margin: 15px;
-    line-height: normal;
-  }
-
-  .login {
-    font-size: 1rem;
+    font-size: clamp(45px, 1vw, 50px);
   }
 }
 
-.top-bar {
-  text-align: left;
-  font-family: "Rye", Arial, Helvetica, sans-serif;
-  display: grid;
-  grid-template-columns: 1fr 1fr 10fr;
+.button-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
   gap: 15px;
-  padding: 20px;
+  letter-spacing: 2px;
 }
 
 .button-gallery,
 .button-news {
-  background-color: var(--yellow-400);
+  color: var(--yellow-200);
   text-decoration: none;
-  padding: 1px 9px;
-  color: black;
-  border-radius: 15px;
-  transition: background-color 0.3s;
-  opacity: 1;
-  text-align: center;
-}
-
-.button-gallery:hover,
-.button-news:hover {
-  background-color: var(--yellow-100);
-  box-shadow: 0px 0px 12px var(--yellow-45);
-}
-
-@media (max-width: 768px) {
-  .top-bar {
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .button-gallery,
-  .button-news {
-    width: 90%;
-
-    font-size: 0.95rem;
-  }
-}
-
-/* Content */
-
-.content {
-  margin: 20px;
-}
-
-.title-icon::before {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-  background-image: url("./assets/imagens/Moto.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-}
-
-h2 {
-  color: var(--yellow-400);
-  font-family: "Rye", Arial, Helvetica, sans-serif;
-  text-align: left;
-}
-
-p,
-ul {
-  color: var(--yellow-50);
-  text-align: left;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-.button-base {
-  max-width: 60px;
-  margin-left: auto;
-  margin-top: 20px;
-  margin-right: 15px;
-  font-size: 10px;
-  padding: 1px 9px;
-  color: black;
   font-weight: bold;
-  transition: background-color 0.3s;
-  opacity: 1;
-  text-align: center;
-}
-
-.button-base2 {
-  display: flex;
-  background-color: var(--yellow-400);
-  border: none;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  padding: 3px;
-  border-radius: 15px;
-}
-
-.icone-topo {
-  width: 40px;
-  height: 25px;
-}
-
-.back {
-  color: #000;
-}
-
-#image-base {
-  width: 100%;
-  height: 150px;
-  opacity: 0.3;
-  background-image: url("../src/assets/imagens/Bandeira_de_Roraima.png");
-  background-size: cover;
-  background-position: center;
-}
-
-/* Login */
-
-.container-login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-.text-login {
-  color: white;
-  text-align: center;
-  letter-spacing: 3px;
-  font-size: 4rem;
-  padding-bottom: 5rem;
-}
-
-.login-space {
-  max-width: 200px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #ffffffbb;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 0px 7px var(--yellow-45);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-
-.forgot-password {
-  font-size: 10px;
-  color: blue;
-  background: none;
-  border: none;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-input {
-  margin: 2px;
-  border-radius: 6px;
-}
-
-input[type="submit"] {
-  background-color: #ffd700;
-  font-weight: bolder;
-  margin-top: 15px;
-  cursor: pointer;
-}
-
-@media (max-width: 1280px) {
-  .text-login {
-    font-size: clamp(35px, 7vw, 120px);
-    padding-bottom: 30px;
-  }
-}
-
-@media (max-width: 800px) {
-  .text-login {
-    font-size: clamp(35px, 8vw, 120px);
-    padding-bottom: 30px;
-  }
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 4px var(--yellow-800);
 }
