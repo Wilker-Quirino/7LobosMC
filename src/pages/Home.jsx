@@ -5,7 +5,7 @@ import Footer from "../components/Footer.jsx";
 const Home = () => {
   return (
     <>
-      <Header />; <Footer />;
+      <Header /> <Footer />
     </>
   );
 };
