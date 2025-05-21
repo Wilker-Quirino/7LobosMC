@@ -22,6 +22,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 .header-font {
   font-family: "Rye", Arial, Helvetica, sans-serif;
 }
@@ -111,6 +117,7 @@
   z-index: 9;
   left: 50%;
   transform: translateX(-50%);
+  align-items: center;
 }
 
 @media (max-width: 1280px) {
@@ -121,6 +128,7 @@
     gap: 6px;
     column-gap: 40px;
     text-align: center;
+    align-items: center;
   }
 }
 
@@ -130,6 +138,8 @@
   font-weight: bold;
   font-size: 1rem;
   text-shadow: 1px 1px 2px var(--yellow-800);
+  text-align: center;
+  align-items: center;
 }
 
 .menu-hamburguer {
@@ -148,6 +158,7 @@
     right: 20px;
     z-index: 10;
     color: var(--yellow-400);
+    align-items: center;
   }
 
   .button-container {
@@ -160,6 +171,8 @@
     padding: 15px;
     border-radius: 8px;
     z-index: 9;
+    text-align: center;
+    align-items: center;
   }
 
   .button-container.ativo {
@@ -219,9 +232,16 @@ h2 {
   padding: 2rem;
   background-color: #0f0f0f;
   color: white;
-  background-image: linear-gradient(to right, #0f0f0f, rgba(15, 15, 15, 0));
+  background-image: #0f0f0f;
   position: relative;
   z-index: 1;
+  min-width: 0;
+}
+
+.form-section,
+.image-section {
+  position: unset;
+  z-index: unset;
 }
 
 .form-section h1 {
@@ -317,14 +337,16 @@ h2 {
   flex: 1;
   position: relative;
   z-index: 0;
-  background-image: linear-gradient(
-      to right,
-      #0f0f0f 0%,
-      rgba(15, 15, 15, 0.6) 30%,
-      rgba(0, 0, 0, 0) 60%
-    ),
-    url("./assets/imagens/Floresta-estrada.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-width: 0;
+  height: 100%;
+  background-image: linear-gradient(
+      to right,
+      #0f0f0f 0%,
+      rgba(15, 15, 15, 0.7) 30%,
+      rgba(0, 0, 0, 0) 60%
+    ),
+    url("./assets/imagens/Floresta-estrada.png");
 }
