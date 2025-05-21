@@ -4,9 +4,9 @@ import Galeria from "./pages/Galeria.jsx";
 import Noticias from "./pages/Noticias.jsx";
 import Login from "./pages/Login.jsx";
 import Sobre from "./components/Sobre.jsx";
-import CodigoConduta from "./components/CodigoConduta.jsx";
-import EstruturaHieraquica from "./components/EstruturaHieraquica.jsx";
-import FaleConosco from "./components/FaleConosco.jsx";
+import CodigoConduta from "./pages/CodigoConduta.jsx";
+import EstruturaHieraquica from "./pages/EstruturaHieraquica.jsx";
+import FaleConosco from "./pages/FaleConosco.jsx";
 import FundamentosEstrutura from "./components/FundamentosEstrutura.jsx";
 
 const App = () => {
