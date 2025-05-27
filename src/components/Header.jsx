@@ -34,10 +34,9 @@ const Header = () => {
         <nav className={`button-container ${menuAberto ? "ativo" : ""}`}>
           <Link to="/galeria">Galeria</Link>
           <Link to="/noticias">Notícias</Link>
-          <Link to="/CodigoConduta">Conduta</Link>
           <Link to="/EstruturaHieraquica">Hierarquia</Link>
-          <Link to="/FundamentosEstrutura">Fundamentos</Link>
           <Link to="/FaleConosco">Fale Conosco</Link>
+          <Link to="/FundamentosConduta">Fundamentos e Conduta</Link>
         </nav>
       </div>
       <Sobre />

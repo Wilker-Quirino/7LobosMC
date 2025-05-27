@@ -1,4 +1,4 @@
-import { images } from "./images";
+import { images } from "./images.js";
 import { db } from "./conect.js";
 
 const newImages = images.map((currentImagesObj) => {

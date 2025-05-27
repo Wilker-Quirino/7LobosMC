@@ -1,8 +1,17 @@
 import "../assets/imagens/Floresta-estrada.png";
+import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Login = () => {
+  const navigate = useNavigate();
   return (
     <header className="container-login">
+      <div className="voltar-container">
+        <div className="voltar" onClick={() => navigate(-1)}>
+          <FontAwesomeIcon icon={faCircleLeft} />
+        </div>
+      </div>
       <div className="form-section">
         <h1>Faça seu login</h1>
         <section>
