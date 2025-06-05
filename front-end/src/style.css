@@ -146,7 +146,7 @@ body {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1280px), (max-width: 800px) {
   .menu-hamburguer {
     display: block;
     font-size: 28px;
@@ -363,12 +363,12 @@ li {
 .container-speak {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-  min-height: 100vh;
   background-image: url("./assets/imagens/tijolos-brancos-da-textura-da-parede.jpg");
   background-size: cover;
   background-position: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
 }
 
 .form-speak {
@@ -525,15 +525,17 @@ button:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 0 40px 0;
-  padding-top: 30px;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .conduct h2 {
   font-family: "Rye", Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
-  padding-top: 10%;
+  padding-top: 80px;
   text-align: center;
   font-size: 55px;
   color: var(--yellow-500);
