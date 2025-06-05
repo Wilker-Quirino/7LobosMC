@@ -10,7 +10,7 @@ import FaleConosco from "./pages/FaleConosco.jsx";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/7LobosMC">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/galeria" element={<Galeria />} />
