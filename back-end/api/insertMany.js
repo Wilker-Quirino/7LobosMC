@@ -1,11 +1,11 @@
-import { images } from "./images.js";
+import { users } from "./users.js";
 import { db } from "./conect.js";
 
-const newImages = images.map((currentImagesObj) => {
-  const newImagesObj = { ...currentImagesObj };
-  delete newImagesObj.id;
+const newUsers = users.map((currentUsersObj) => {
+  const newUsersObj = { ...currentUsersObj };
+  delete newUsersObj.id;
 
-  return newImagesObj;
+  return newUsersObj;
 });
 
-const responseImages = await db.collection("gallery").insertMany(newImages);
+const responseUsers = await db.collection("users").insertMany(newUsers);

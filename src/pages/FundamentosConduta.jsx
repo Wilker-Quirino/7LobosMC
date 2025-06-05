@@ -7,10 +7,8 @@ const FundamentosConduta = () => {
   const navigate = useNavigate();
   return (
     <div className="conduct">
-      <div className="voltar-container">
-        <div className="voltar" onClick={() => navigate(-1)}>
-          <FontAwesomeIcon icon={faCircleLeft} />
-        </div>
+      <div className="back" onClick={() => navigate(-1)}>
+        <FontAwesomeIcon icon={faCircleLeft} />
       </div>
       <h2>Fundamentos e Estrutura</h2>
       <p>

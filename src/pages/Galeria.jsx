@@ -18,10 +18,8 @@ const Galeria = () => {
 
   return (
     <div className="container-gallery">
-      <div className="voltar-container">
-        <div className="voltar" onClick={() => navigate(-1)}>
-          <FontAwesomeIcon icon={faCircleLeft} />
-        </div>
+      <div className="back" onClick={() => navigate(-1)}>
+        <FontAwesomeIcon icon={faCircleLeft} />
       </div>
       <h1>Galeria Moto Clube</h1>
       <div className="gallery">
