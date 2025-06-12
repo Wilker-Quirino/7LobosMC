@@ -397,6 +397,7 @@ form label {
   margin-bottom: 15px;
   color: #333;
   font-weight: 500;
+  padding-bottom: 5px;
 }
 
 form span {
@@ -407,7 +408,6 @@ form input,
 form textarea {
   width: 100%;
   padding: 12px 15px;
-  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 8px;
   transition: border-color 0.3s;
@@ -537,21 +537,9 @@ button:hover {
 }
 
 .conduct p {
-  width: 70%;
-  margin: 30px auto;
-  line-height: 1.5rem;
-}
-
-.conduct ul {
-  width: 70%;
-  margin: 40px auto 40px auto;
-  list-style-type: none;
-  line-height: 1.5rem;
-  letter-spacing: 1.2px;
-}
-
-.conduct li {
-  margin-bottom: 15px;
+  width: 300px;
+  margin: auto;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 1280px) {
@@ -573,10 +561,6 @@ button:hover {
   .conduct p {
     width: 80%;
     text-align: justify;
-  }
-
-  .conduct ul {
-    width: 80%;
   }
 }
 

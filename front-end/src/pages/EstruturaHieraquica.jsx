@@ -15,7 +15,7 @@ const EstruturaHieraquica = () => {
           <p>
             A hierarquia do 7 Lobos MC é composta por sete cargos. Cada um
             representa um princípio e carrega a responsabilidade de mantê-lo
-            vivo.
+            vivo
           </p>
         </div>
         <div className="alfa esquerda">
@@ -23,7 +23,7 @@ const EstruturaHieraquica = () => {
           <h2>Alfa </h2>
           <p className="grid-item">
             Líder do motoclube. Decide junto ao conselho, mas tem a palavra
-            final. Responsável por preservar os laços familiares dentro do MC.
+            final. Responsável por preservar os laços familiares dentro do MC
           </p>
         </div>
         <div className="counselor direita">
@@ -31,7 +31,7 @@ const EstruturaHieraquica = () => {
           <h2>Conselheiro</h2>
           <p className="grid-item">
             Segundo no comando. Auxilia o Alfa e lidera na sua ausência. Mantém
-            a integridade e o respeito no MC.
+            a integridade e o respeito no MC
           </p>
         </div>
         <div className="treasurer esquerda">
@@ -39,7 +39,7 @@ const EstruturaHieraquica = () => {
           <h2>Tesoureiro</h2>
           <p className="grid-item">
             Responsável pelas finanças. Presta contas ao conselho todo dia 20.
-            Garante transparência e lealdade financeira.
+            Garante transparência e lealdade financeira
           </p>
         </div>
         <div className="hunter direita">
@@ -47,7 +47,7 @@ const EstruturaHieraquica = () => {
           <h2>Caçador</h2>
           <p className="grid-item">
             Líder da segurança. Membros armados legalmente são caçadores.
-            Responsáveis pela proteção dos irmãos e suas famílias.
+            Responsáveis pela proteção dos irmãos e suas famílias
           </p>
         </div>
         <div className="first-guardian esquerda">
@@ -58,7 +58,7 @@ const EstruturaHieraquica = () => {
           <h2>Primeiro Guardião</h2>
           <p className="grid-item">
             Protege tradições e escudeiros. Avalia novos membros. Zela pelo
-            respeito dentro do MC.
+            respeito dentro do MC
           </p>
         </div>
         <div className="second-guardian direita">
@@ -68,8 +68,7 @@ const EstruturaHieraquica = () => {
           />
           <h2>Segundo Guardião</h2>
           <p className="grid-item">
-            Reforça laços entre irmãos e protege o MC junto ao Primeiro
-            Guardião.
+            Reforça laços entre irmãos e protege o MC junto ao Primeiro Guardião
           </p>
         </div>
         <div className="third-guardian esquerda">
@@ -79,8 +78,7 @@ const EstruturaHieraquica = () => {
           />
           <h2>Terceiro Guardião</h2>
           <p className="grid-item">
-            Garante que todos tenham voz e vez, independente do tempo de
-            estrada.
+            Garante que todos tenham voz e vez, independente do tempo de estrada
           </p>
         </div>
       </div>
